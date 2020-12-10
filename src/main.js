@@ -6,6 +6,7 @@ import ElementUI from 'element-ui' // 引入UI
 import 'element-ui/lib/theme-chalk/index.css' // 引入样式
 Vue.config.productionTip = false
 Vue.use(ElementUI)
+// Vue.use(VueRouter)
 // new Vue({
 //   router,
 //   render: h => h(login)

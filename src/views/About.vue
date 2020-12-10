@@ -1,11 +1,16 @@
 
 <template>
-    <div>111</div>
+    <div>
+    <div>
+      111
+      </div>
+      </div>
 
 </template>
 
 <script>
 export default {
+  name: 'About',
   data () {
     const validator = function (rule, value, callBack) {
       // rule当前规则
