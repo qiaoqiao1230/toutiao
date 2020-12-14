@@ -45,7 +45,6 @@
     <el-col :span="4">
       <div class="grid-content bg-purple">
         <el-button type="primary">查询</el-button>
-        <el-button type="primary" style="width:80px">封号原因</el-button>
       </div>
     </el-col>
   </el-row>
@@ -57,42 +56,67 @@
         <el-table-column
           prop="date"
           label="ID"
-          width="120">
+          width="80">
         </el-table-column>
         <el-table-column
           prop="name"
           label="Hi号"
-          width="120">
+          width="80">
         </el-table-column>
         <el-table-column
           prop="address"
           label="昵称"
-          width="120">
+          width="80">
         </el-table-column>
         <el-table-column
           prop="date"
-          label="性别"
-          width="120">
+          label="封号时长"
+          width="80">
         </el-table-column>
         <el-table-column
           prop="name"
-          label="年龄"
-          width="120">
+          label="封号地址"
+          width="80">
         </el-table-column>
         <el-table-column
           prop="address"
-          label="地区"
-          width="120">
+          label="封号类型"
+          width="80">
         </el-table-column>
         <el-table-column
           prop="date"
-          label="类型"
-          width="120">
+          label="封号说明"
+          width="80">
         </el-table-column>
         <el-table-column
           prop="name"
+          label="封禁依据"
+          width="80">
+          <el-link  :underline="false" type="primary" >查看</el-link>
+        </el-table-column>
+        <el-table-column
+          prop="name"
+          label="封禁时间"
+          width="80">
+        </el-table-column>
+        <el-table-column
+          prop="address"
+          label="解封时间"
+          width="80">
+        </el-table-column>
+        <el-table-column
+          prop="date"
           label="状态"
-          width="127">
+          width="80">
+        </el-table-column>
+        <el-table-column
+          prop="name"
+          label="操作"
+          width="87">
+          <template>
+          <el-link  :underline="false" type="primary" >查看</el-link>
+          <el-link  :underline="false" type="primary" >编辑</el-link>
+        </template>
         </el-table-column>
       </el-table>
 </div>

@@ -2,12 +2,12 @@
 <div>
   <el-row>
     <el-col :span="5">
-      <div class="grid-content bg-purple">Hi号
-       <el-input v-model="input" placeholder="请输入" maxlength = "11" style="width:150px"></el-input>
+      <div class="grid-content bg-purple">礼物名称
+       <el-input v-model="input" placeholder="请输入" maxlength = "11" style="width:120px"></el-input>
       </div>
     </el-col>
     <el-col :span="5">
-      <div class="grid-content bg-purple">性别
+      <div class="grid-content bg-purple">标签
         <el-select v-model="value" placeholder="请选择" style="width:60%">
             <el-option
               v-for="item in options"
@@ -19,7 +19,7 @@
       </div>
     </el-col>
     <el-col :span="5">
-         <div class="grid-content bg-purple">类型
+         <div class="grid-content bg-purple">状态
             <el-select v-model="genre" placeholder="请选择" style="width:60%">
                 <el-option
                   v-for="item in mold"
@@ -31,7 +31,7 @@
         </div>
     </el-col>
     <el-col :span="5">
-         <div class="grid-content bg-purple">状态
+         <div class="grid-content bg-purple">tab
             <el-select v-model="state" placeholder="请选择" style="width:60%">
                 <el-option
                   v-for="item in status"
@@ -45,7 +45,7 @@
     <el-col :span="4">
       <div class="grid-content bg-purple">
         <el-button type="primary">查询</el-button>
-        <el-button type="primary" style="width:80px">封号原因</el-button>
+        <el-button type="primary" style="width:80px">创建</el-button>
       </div>
     </el-col>
   </el-row>
@@ -57,42 +57,66 @@
         <el-table-column
           prop="date"
           label="ID"
-          width="120">
+          width="100">
         </el-table-column>
         <el-table-column
           prop="name"
-          label="Hi号"
-          width="120">
+          label="名称"
+          width="100">
         </el-table-column>
         <el-table-column
           prop="address"
-          label="昵称"
-          width="120">
-        </el-table-column>
-        <el-table-column
-          prop="date"
-          label="性别"
-          width="120">
-        </el-table-column>
-        <el-table-column
-          prop="name"
-          label="年龄"
-          width="120">
-        </el-table-column>
-        <el-table-column
-          prop="address"
-          label="地区"
-          width="120">
+          label="价格"
+          width="100">
         </el-table-column>
         <el-table-column
           prop="date"
           label="类型"
-          width="120">
+          width="100">
         </el-table-column>
         <el-table-column
           prop="name"
+          label="tab"
+          width="100">
+        </el-table-column>
+        <el-table-column
+          prop="address"
+          label="获得方式"
+          width="100">
+        </el-table-column>
+        <el-table-column
+          prop="date"
+          label="排序"
+          width="100">
+        </el-table-column>
+        <el-table-column
+          prop="name"
+          label="图片"
+          width="100">
+        </el-table-column>
+          <el-table-column
+          prop="name"
+          label="动画"
+          width="100">
+        </el-table-column>
+        <el-table-column
+          prop="address"
+          label="上架时间"
+          width="100">
+        </el-table-column>
+        <el-table-column
+          prop="date"
           label="状态"
-          width="127">
+          width="100">
+        </el-table-column>
+        <el-table-column
+          prop="name"
+          label="操作"
+          width="130">
+           <template>
+          <el-link  :underline="false" type="primary" >编辑</el-link>
+          <el-link  :underline="false" style="margin-left:15px" type="primary" >删除</el-link>
+        </template>
         </el-table-column>
       </el-table>
 </div>
